@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.srijan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ContactUs"></activity>
+        <activity android:name=".AboutUsClass" />
+        <activity android:name=".Developers" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewsFeed" />
+        <activity android:name=".MnMSrijan" />
+        <activity android:name=".competition" />
+        <activity android:name=".dance" />
+        <activity android:name=".salsa" />
+        <activity android:name=".informals" />
+        <activity android:name=".Musical" />
+        <activity android:name=".Dramatics" />
+        <activity android:name=".Photography" />
+        <activity android:name=".FineArts" />
+        <activity android:name=".Films" />
+        <activity android:name=".Kavyanjali" />
+        <activity android:name=".Quiz" />
+        <activity android:name=".Literary" />
+        <activity android:name=".Footloose" />
+        <activity android:name=".Reflection" />
+        <activity android:name=".Streetbeats" />
+        <activity android:name=".HustleHerd" />
+        <activity android:name=".Aaroh" />
+        <activity android:name=".Unplugged" />
+        <activity android:name=".PairOnStage" />
+        <activity android:name=".Rangmanch" />
+        <activity android:name=".Monoact" />
+        <activity android:name=".Snappers" />
+        <activity android:name=".CreativeCanvas" />
+        <activity android:name=".Hallabol" />
+        <activity android:name=".ChaiPeCharcha" />
+        <activity android:name=".SketchTheView" />
+        <activity android:name=".FacePainting" />
+        <activity android:name=".TshirtPainting" />
+        <activity android:name=".DoodleMaking" />
+        <activity android:name=".KavyanjaliEvent" />
+        <activity android:name=".PopQuiz" />
+        <activity android:name=".SportsQuiz" />
+        <activity android:name=".BusinessQuiz" />
+        <activity android:name=".GeneralQuiz" />
+        <activity android:name=".Standup" />
+        <activity android:name=".Trichonia" />
+        <activity android:name=".HeadOn" />
+        <activity android:name=".Filmmaking" />
+        <activity android:name=".Workshop" />
+        <activity android:name=".Paridhan" />
+        <activity android:name=".Avalanche" />
+        <activity android:name=".CampusPrincess" />
+        <activity android:name=".NowYouSeeMe" />
+        <activity android:name=".MagicMirrors" />
+        <activity android:name=".Prom" />
+        <activity android:name=".SilentDJ" />
+        <activity android:name=".Karaoke" />
+        <activity android:name=".DJBattle" />
+        <activity android:name=".Zorbing" />
+        <activity android:name=".PhotoBooth" />
+        <activity android:name=".MovieScreening" />
+        <activity android:name=".Chess" />
+        <activity android:name=".CSGO" />
+        <activity android:name=".PUBG" />
+        <activity android:name=".FIFA19" />
+        <activity android:name=".Snooker" />
+        <activity android:name=".Paintball" />
+        <activity android:name=".KaviSammelan" />
+        <activity android:name=".OperationCampaign" />
+        <activity android:name=".PoetrySlam" />
+        <activity android:name=".Fanfic" />
+        <activity android:name=".Harmony" />
+        <activity android:name=".starattraction" />
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Games" />
+        <activity android:name=".Highlights" />
+        <activity android:name=".Details" />
+        <activity android:name=".stardetails" />
+    </application>
+
+</manifest>

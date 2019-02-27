@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "595875191789",
+    "firebase_url": "https://srijan-6df05.firebaseio.com",
+    "project_id": "srijan-6df05",
+    "storage_bucket": "srijan-6df05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595875191789:android:5eaaa873a905a7fd",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.srijan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595875191789-l9bt8rq4f1mka026sj8natpk5s19oi7p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.srijan",
+            "certificate_hash": "831cd6e237ec8fa6c4e95a1b33f13dc265d91490"
+          }
+        },
+        {
+          "client_id": "595875191789-suipltuikep92nbspvh97jkuns2v2i4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX2oAFotstDHKbrftXxtlw8P9n_yDGhJE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595875191789-suipltuikep92nbspvh97jkuns2v2i4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

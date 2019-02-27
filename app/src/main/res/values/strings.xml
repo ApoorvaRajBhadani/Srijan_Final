@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">srijan</string>
+    <string name="action_settings">Settings</string>
+    <string name="image_preference">com.example.lenovo.srijan_image_preference</string>
+    <string name="image_status">com.example.lenovo.srijan_image_status</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="aboutus">Srijan is the biggest Socio-Cultural festival of Eastern India which has been in the limelight since 1977. It has around 20,000 footfall from more than 200 colleges across the country every year and has prizes worth more than INR 7.5 lakh. It offers a wonderful platform where participants from different part of the country get a chance to interact, enhance and demonstrate their creativity, personality and talents.</string>
+</resources>
