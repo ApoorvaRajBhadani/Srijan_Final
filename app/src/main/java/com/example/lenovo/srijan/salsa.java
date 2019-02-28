@@ -66,15 +66,15 @@ public class salsa extends AppCompatActivity {
             imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(!sharedPreferenceConfig.getstatus()){
+                    if(!sharedPreferenceConfig.getstatus40()){
                         Toast.makeText(salsa.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                         imageView.setImageResource(R.drawable.bell);
                         FirebaseMessaging.getInstance().unsubscribeFromTopic("salsa");//event name
-                        sharedPreferenceConfig.writeImagestatus(true);
+                        sharedPreferenceConfig.writeImagestatus40(true);
                     }else{
                         FirebaseMessaging.getInstance().subscribeToTopic("salsa");
                         Toast.makeText(salsa.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                        sharedPreferenceConfig.writeImagestatus(false);
+                        sharedPreferenceConfig.writeImagestatus40(false);
                         imageView.setImageResource(R.drawable.belloff);
                     }
 

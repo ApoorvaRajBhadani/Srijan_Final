@@ -73,7 +73,7 @@ public class GeneralQuiz extends MainActivity {
         register();
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus16()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -92,18 +92,18 @@ public class GeneralQuiz extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                if(!sharedPreferenceConfig.getstatus()){
+                if(!sharedPreferenceConfig.getstatus16()){
                     //todo:set context
                     Toast.makeText(GeneralQuiz.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                     imageView.setImageResource(R.drawable.bell);
                     FirebaseMessaging.getInstance().unsubscribeFromTopic("GeneralQuiz");//Todo:event name
-                    sharedPreferenceConfig.writeImagestatus(true);
+                    sharedPreferenceConfig.writeImagestatus16(true);
                 }else{
 
                     FirebaseMessaging.getInstance().subscribeToTopic("GeneralQuiz");//Todo:event name
                     //todo:set context
                     Toast.makeText(GeneralQuiz.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                    sharedPreferenceConfig.writeImagestatus(false);
+                    sharedPreferenceConfig.writeImagestatus16(false);
                     imageView.setImageResource(R.drawable.belloff);
                 }
 

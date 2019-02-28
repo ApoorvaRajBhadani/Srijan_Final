@@ -75,7 +75,7 @@ public class Prom extends MainActivity {
         register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus36()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -95,18 +95,18 @@ public class Prom extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                    if(!sharedPreferenceConfig.getstatus()){
+                    if(!sharedPreferenceConfig.getstatus36()){
                         //todo:set context
                         Toast.makeText(Prom.this,"Unsubscribed from event's notifications", LENGTH_LONG).show();
                         imageView.setImageResource(R.drawable.bell);
                         FirebaseMessaging.getInstance().unsubscribeFromTopic("Prom");//event name
-                        sharedPreferenceConfig.writeImagestatus(true);
+                        sharedPreferenceConfig.writeImagestatus36(true);
                     }else{
 
                         FirebaseMessaging.getInstance().subscribeToTopic("Prom");
                         //todo:set context
                         Toast.makeText(Prom.this,"Successfully subscribed for notifications", LENGTH_LONG).show();
-                        sharedPreferenceConfig.writeImagestatus(false);
+                        sharedPreferenceConfig.writeImagestatus36(false);
                         imageView.setImageResource(R.drawable.belloff);
                     }
                 }

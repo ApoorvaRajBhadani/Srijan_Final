@@ -83,18 +83,18 @@ public class Unplugged extends AppCompatActivity {
                 else
                     connected = false;
                 if(connected){
-                if(!sharedPreferenceConfig.getstatus()){
+                if(!sharedPreferenceConfig.getstatus50()){
                     //todo:set context
                     Toast.makeText(Unplugged.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                     imageView.setImageResource(R.drawable.bell);
                     FirebaseMessaging.getInstance().unsubscribeFromTopic("Unplugged");//Todo:event name
-                    sharedPreferenceConfig.writeImagestatus(true);
+                    sharedPreferenceConfig.writeImagestatus50(true);
                 }else{
 
                     FirebaseMessaging.getInstance().subscribeToTopic("Unplugged");//Todo:event name
                     //todo:set context
                     Toast.makeText(Unplugged.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                    sharedPreferenceConfig.writeImagestatus(false);
+                    sharedPreferenceConfig.writeImagestatus50(false);
                     imageView.setImageResource(R.drawable.belloff);
                 }
                 }else{

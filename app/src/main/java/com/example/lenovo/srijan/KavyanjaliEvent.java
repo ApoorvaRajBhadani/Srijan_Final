@@ -71,7 +71,7 @@ public class KavyanjaliEvent extends MainActivity {
         details();       register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus23()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -90,18 +90,18 @@ public class KavyanjaliEvent extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                if(!sharedPreferenceConfig.getstatus()){
+                if(!sharedPreferenceConfig.getstatus23()){
                     //todo:set context
                     Toast.makeText(KavyanjaliEvent.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                     imageView.setImageResource(R.drawable.bell);
                     FirebaseMessaging.getInstance().unsubscribeFromTopic("KavyanjaliEvent");//Todo:event name
-                    sharedPreferenceConfig.writeImagestatus(true);
+                    sharedPreferenceConfig.writeImagestatus23(true);
                 }else{
 
                     FirebaseMessaging.getInstance().subscribeToTopic("KavyanjaliEvent");//Todo:event name
                     //todo:set context
                     Toast.makeText(KavyanjaliEvent.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                    sharedPreferenceConfig.writeImagestatus(false);
+                    sharedPreferenceConfig.writeImagestatus23(false);
                     imageView.setImageResource(R.drawable.belloff);
                 }
 

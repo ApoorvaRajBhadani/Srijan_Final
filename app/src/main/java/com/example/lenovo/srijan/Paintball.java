@@ -75,7 +75,7 @@ public class Paintball extends MainActivity {
         register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus30()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -95,18 +95,18 @@ public class Paintball extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                    if(!sharedPreferenceConfig.getstatus()){
+                    if(!sharedPreferenceConfig.getstatus30()){
                         //todo:set context
                         Toast.makeText(Paintball.this,"Unsubscribed from event's notifications", LENGTH_LONG).show();
                         imageView.setImageResource(R.drawable.bell);
                         FirebaseMessaging.getInstance().unsubscribeFromTopic("Paintball");//event name
-                        sharedPreferenceConfig.writeImagestatus(true);
+                        sharedPreferenceConfig.writeImagestatus30(true);
                     }else{
 
                         FirebaseMessaging.getInstance().subscribeToTopic("Paintball");
                         //todo:set context
                         Toast.makeText(Paintball.this,"Successfully subscribed for notifications", LENGTH_LONG).show();
-                        sharedPreferenceConfig.writeImagestatus(false);
+                        sharedPreferenceConfig.writeImagestatus30(false);
                         imageView.setImageResource(R.drawable.belloff);
                     }
                 }

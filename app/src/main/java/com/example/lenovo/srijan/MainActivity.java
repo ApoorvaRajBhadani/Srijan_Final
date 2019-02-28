@@ -204,6 +204,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (id) {
                     case R.id.nav_home:
                         startActivity(new Intent(MainActivity.this, MainActivity.class));
+                        finish();
                         break;
                     case R.id.nav_about:
                         startActivity(new Intent(MainActivity.this, AboutUsClass.class));

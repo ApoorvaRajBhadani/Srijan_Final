@@ -75,7 +75,7 @@ public class PairOnStage extends MainActivity {
 
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus31()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -94,18 +94,18 @@ public class PairOnStage extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                if(!sharedPreferenceConfig.getstatus()){
+                if(!sharedPreferenceConfig.getstatus31()){
                     //todo:set context
                     Toast.makeText(PairOnStage.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                     imageView.setImageResource(R.drawable.bell);
                     FirebaseMessaging.getInstance().unsubscribeFromTopic("PairOnStage");//Todo:event name
-                    sharedPreferenceConfig.writeImagestatus(true);
+                    sharedPreferenceConfig.writeImagestatus31(true);
                 }else{
 
                     FirebaseMessaging.getInstance().subscribeToTopic("PairOnStage");//Todo:event name
                     //todo:set context
                     Toast.makeText(PairOnStage.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                    sharedPreferenceConfig.writeImagestatus(false);
+                    sharedPreferenceConfig.writeImagestatus31(false);
                     imageView.setImageResource(R.drawable.belloff);
                 }
                 }else{

@@ -75,7 +75,7 @@ public class Footloose extends MainActivity {
          final ImageView imageView = (ImageView)findViewById(R.id.notification);
         sharedPreferenceConfig = new SharedPreferenceConfig(Footloose.this);
 
-            if(sharedPreferenceConfig.getstatus()){
+            if(sharedPreferenceConfig.getstatus15()){
                 //todo:set context
                 imageView.setImageResource(R.drawable.bell);
 
@@ -108,18 +108,18 @@ public class Footloose extends MainActivity {
                 else
                     connected = false;
                  if(connected){
-                      if(!sharedPreferenceConfig.getstatus()){
+                      if(!sharedPreferenceConfig.getstatus15()){
                          //todo:set context
                          Toast.makeText(Footloose.this,"Unsubscribed from event's notifications", LENGTH_LONG).show();
                          imageView.setImageResource(R.drawable.bell);
                          FirebaseMessaging.getInstance().unsubscribeFromTopic("Footloose");//event name
-                         sharedPreferenceConfig.writeImagestatus(true);
+                         sharedPreferenceConfig.writeImagestatus15(true);
                      }else{
 
                          FirebaseMessaging.getInstance().subscribeToTopic("Footloose");
                          //todo:set context
                          Toast.makeText(Footloose.this,"Successfully subscribed for notifications", LENGTH_LONG).show();
-                         sharedPreferenceConfig.writeImagestatus(false);
+                         sharedPreferenceConfig.writeImagestatus15(false);
                          imageView.setImageResource(R.drawable.belloff);
                      }
                  }

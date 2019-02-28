@@ -75,7 +75,7 @@ public class MagicMirrors extends MainActivity {
         register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus24()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -95,18 +95,18 @@ public class MagicMirrors extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                    if(!sharedPreferenceConfig.getstatus()){
+                    if(!sharedPreferenceConfig.getstatus24()){
                         //todo:set context
                         Toast.makeText(MagicMirrors.this,"Unsubscribed from event's notifications", LENGTH_LONG).show();
                         imageView.setImageResource(R.drawable.bell);
                         FirebaseMessaging.getInstance().unsubscribeFromTopic("MagicMirrors");//event name
-                        sharedPreferenceConfig.writeImagestatus(true);
+                        sharedPreferenceConfig.writeImagestatus24(true);
                     }else{
 
                         FirebaseMessaging.getInstance().subscribeToTopic("MagicMirrors");
                         //todo:set context
                         Toast.makeText(MagicMirrors.this,"Successfully subscribed for notifications", LENGTH_LONG).show();
-                        sharedPreferenceConfig.writeImagestatus(false);
+                        sharedPreferenceConfig.writeImagestatus24(false);
                         imageView.setImageResource(R.drawable.belloff);
                     }
                 }

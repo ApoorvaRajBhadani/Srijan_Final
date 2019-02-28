@@ -76,7 +76,7 @@ public class DJBattle extends MainActivity {
         register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus9()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -96,18 +96,18 @@ public class DJBattle extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                    if(!sharedPreferenceConfig.getstatus()){
+                    if(!sharedPreferenceConfig.getstatus9()){
                         //todo:set context
                         Toast.makeText(DJBattle.this,"Unsubscribed from event's notifications", LENGTH_LONG).show();
                         imageView.setImageResource(R.drawable.bell);
                         FirebaseMessaging.getInstance().unsubscribeFromTopic("DJBattle");//event name
-                        sharedPreferenceConfig.writeImagestatus(true);
+                        sharedPreferenceConfig.writeImagestatus9(true);
                     }else{
 
                         FirebaseMessaging.getInstance().subscribeToTopic("DJBattle");
                         //todo:set context
                         Toast.makeText(DJBattle.this,"Successfully subscribed for notifications", LENGTH_LONG).show();
-                        sharedPreferenceConfig.writeImagestatus(false);
+                        sharedPreferenceConfig.writeImagestatus9(false);
                         imageView.setImageResource(R.drawable.belloff);
                     }
                 }

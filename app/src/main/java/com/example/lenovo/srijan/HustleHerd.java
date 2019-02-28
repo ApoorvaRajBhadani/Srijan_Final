@@ -74,7 +74,7 @@ public class HustleHerd extends MainActivity {
         register();
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus20()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -93,18 +93,18 @@ public class HustleHerd extends MainActivity {
                 else
                     connected = false;
                 if(connected) {
-                    if (!sharedPreferenceConfig.getstatus()) {
+                    if (!sharedPreferenceConfig.getstatus20()) {
                         //todo:set context
                         Toast.makeText(HustleHerd.this, "Unsubscribed from event's notifications", Toast.LENGTH_LONG).show();
                         imageView.setImageResource(R.drawable.bell);
                         FirebaseMessaging.getInstance().unsubscribeFromTopic("HustleHerd");//Todo:event name
-                        sharedPreferenceConfig.writeImagestatus(true);
+                        sharedPreferenceConfig.writeImagestatus20(true);
                     } else {
 
                         FirebaseMessaging.getInstance().subscribeToTopic("HustleHerd");//Todo:event name
                         //todo:set context
                         Toast.makeText(HustleHerd.this, "Successfully subscribed for notifications", Toast.LENGTH_LONG).show();
-                        sharedPreferenceConfig.writeImagestatus(false);
+                        sharedPreferenceConfig.writeImagestatus20(false);
                         imageView.setImageResource(R.drawable.belloff);
                     }
 

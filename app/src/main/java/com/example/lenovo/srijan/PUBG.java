@@ -75,7 +75,7 @@ public class PUBG extends MainActivity {
         register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus37()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -95,18 +95,18 @@ public class PUBG extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                    if(!sharedPreferenceConfig.getstatus()){
+                    if(!sharedPreferenceConfig.getstatus37()){
                         //todo:set context
                         Toast.makeText(PUBG.this,"Unsubscribed from event's notifications", LENGTH_LONG).show();
                         imageView.setImageResource(R.drawable.bell);
                         FirebaseMessaging.getInstance().unsubscribeFromTopic("PUBG");//event name
-                        sharedPreferenceConfig.writeImagestatus(true);
+                        sharedPreferenceConfig.writeImagestatus37(true);
                     }else{
 
                         FirebaseMessaging.getInstance().subscribeToTopic("PUBG");
                         //todo:set context
                         Toast.makeText(PUBG.this,"Successfully subscribed for notifications", LENGTH_LONG).show();
-                        sharedPreferenceConfig.writeImagestatus(false);
+                        sharedPreferenceConfig.writeImagestatus37(false);
                         imageView.setImageResource(R.drawable.belloff);
                     }
                 }

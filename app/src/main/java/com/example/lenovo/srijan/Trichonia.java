@@ -82,18 +82,18 @@ public class Trichonia extends AppCompatActivity {
                 else
                     connected = false;
                 if(connected){
-                if(!sharedPreferenceConfig.getstatus()){
+                if(!sharedPreferenceConfig.getstatus48()){
                     //todo:set context
                     Toast.makeText(Trichonia.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                     imageView.setImageResource(R.drawable.bell);
                     FirebaseMessaging.getInstance().unsubscribeFromTopic("Trichonia");//Todo:event name
-                    sharedPreferenceConfig.writeImagestatus(true);
+                    sharedPreferenceConfig.writeImagestatus48(true);
                 }else{
 
                     FirebaseMessaging.getInstance().subscribeToTopic("Trichonia");//Todo:event name
                     //todo:set context
                     Toast.makeText(Trichonia.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                    sharedPreferenceConfig.writeImagestatus(false);
+                    sharedPreferenceConfig.writeImagestatus48(false);
                     imageView.setImageResource(R.drawable.belloff);
                 }
 

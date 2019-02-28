@@ -72,7 +72,7 @@ public class TshirtPainting extends MainActivity {
         register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus49()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -91,18 +91,18 @@ public class TshirtPainting extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                if(!sharedPreferenceConfig.getstatus()){
+                if(!sharedPreferenceConfig.getstatus49()){
                     //todo:set context
                     Toast.makeText(TshirtPainting.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                     imageView.setImageResource(R.drawable.bell);
                     FirebaseMessaging.getInstance().unsubscribeFromTopic("TshirtPainting");//Todo:event name
-                    sharedPreferenceConfig.writeImagestatus(true);
+                    sharedPreferenceConfig.writeImagestatus49(true);
                 }else{
 
                     FirebaseMessaging.getInstance().subscribeToTopic("TshirtPainting");//Todo:event name
                     //todo:set context
                     Toast.makeText(TshirtPainting.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                    sharedPreferenceConfig.writeImagestatus(false);
+                    sharedPreferenceConfig.writeImagestatus49(false);
                     imageView.setImageResource(R.drawable.belloff);
                 }
 

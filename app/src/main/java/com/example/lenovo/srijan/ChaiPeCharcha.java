@@ -71,7 +71,7 @@ public class ChaiPeCharcha extends MainActivity {
         details();       register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus5()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -91,18 +91,18 @@ public class ChaiPeCharcha extends MainActivity {
                     connected = false;
                 if(connected){
 
-                if(!sharedPreferenceConfig.getstatus()){
+                if(!sharedPreferenceConfig.getstatus5()){
                     //todo:set context
                     Toast.makeText(ChaiPeCharcha.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                     imageView.setImageResource(R.drawable.bell);
                     FirebaseMessaging.getInstance().unsubscribeFromTopic("ChaiPeCharcha");//Todo:event name
-                    sharedPreferenceConfig.writeImagestatus(true);
+                    sharedPreferenceConfig.writeImagestatus5(true);
                 }else{
 
                     FirebaseMessaging.getInstance().subscribeToTopic("ChaiPeCharcha");//Todo:event name
                     //todo:set context
                     Toast.makeText(ChaiPeCharcha.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                    sharedPreferenceConfig.writeImagestatus(false);
+                    sharedPreferenceConfig.writeImagestatus5(false);
                     imageView.setImageResource(R.drawable.belloff);
                 }
 

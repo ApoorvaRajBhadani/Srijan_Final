@@ -74,7 +74,7 @@ public class Harmony extends MainActivity {
         register();//new line
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus18()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -94,18 +94,18 @@ public class Harmony extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                    if(!sharedPreferenceConfig.getstatus()){
+                    if(!sharedPreferenceConfig.getstatus18()){
                         //todo:set context
                         Toast.makeText(Harmony.this,"Unsubscribed from event's notifications", LENGTH_LONG).show();
                         imageView.setImageResource(R.drawable.bell);
                         FirebaseMessaging.getInstance().unsubscribeFromTopic("Harmony");//event name
-                        sharedPreferenceConfig.writeImagestatus(true);
+                        sharedPreferenceConfig.writeImagestatus18(true);
                     }else{
 
                         FirebaseMessaging.getInstance().subscribeToTopic("Harmony");
                         //todo:set context
                         Toast.makeText(Harmony.this,"Successfully subscribed for notifications", LENGTH_LONG).show();
-                        sharedPreferenceConfig.writeImagestatus(false);
+                        sharedPreferenceConfig.writeImagestatus18(false);
                         imageView.setImageResource(R.drawable.belloff);
                     }
                 }

@@ -72,7 +72,7 @@ public class CreativeCanvas extends MainActivity {
         register();
         sharedPreferenceConfig = new SharedPreferenceConfig(getApplicationContext());
         final ImageView imageView = (ImageView)findViewById(R.id.notification);
-        if(sharedPreferenceConfig.getstatus()){
+        if(sharedPreferenceConfig.getstatus7()){
             //todo:set context
             imageView.setImageResource(R.drawable.bell);
 
@@ -91,18 +91,18 @@ public class CreativeCanvas extends MainActivity {
                 else
                     connected = false;
                 if(connected){
-                if(!sharedPreferenceConfig.getstatus()){
+                if(!sharedPreferenceConfig.getstatus7()){
                     //todo:set context
                     Toast.makeText(CreativeCanvas.this,"Unsubscribed from event's notifications",Toast.LENGTH_LONG).show();
                     imageView.setImageResource(R.drawable.bell);
                     FirebaseMessaging.getInstance().unsubscribeFromTopic("CreativeCanvas");//Todo:event name
-                    sharedPreferenceConfig.writeImagestatus(true);
+                    sharedPreferenceConfig.writeImagestatus7(true);
                 }else{
 
                     FirebaseMessaging.getInstance().subscribeToTopic("CreativeCanvas");//Todo:event name
                     //todo:set context
                     Toast.makeText(CreativeCanvas.this,"Successfully subscribed for notifications",Toast.LENGTH_LONG).show();
-                    sharedPreferenceConfig.writeImagestatus(false);
+                    sharedPreferenceConfig.writeImagestatus7(false);
                     imageView.setImageResource(R.drawable.belloff);
                 }
 
