@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
@@ -13,13 +13,19 @@
             android:title="About Us" />
         <item
             android:id="@+id/nav_contact"
-            android:title= "Contact Us" />
+            android:title="Contact Us" />
+
+    </group>
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_develops"
-            android:title="Developers" />
-           </group>
+            android:title="App Developers" />
+        <item
+            android:id="@+id/nav_technical"
+            android:title="Srijan's Technical Team">
 
-
+        </item>
+    </group>
 
 
 </menu>

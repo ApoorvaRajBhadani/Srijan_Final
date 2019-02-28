@@ -215,6 +215,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_develops:
                         startActivity(new Intent(MainActivity.this, Developers.class));
                         break;
+                    case R.id.nav_technical:
+                        startActivity(new Intent(MainActivity.this, TechnicalTeam.class));
+                        break;
                     default:
                         return true;
 
