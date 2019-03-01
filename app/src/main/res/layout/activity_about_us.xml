@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@color/bg"
-    tools:context=".AboutUsClass">
+    tools:context="iit.perul.lenovo.srijan.AboutUsClass">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

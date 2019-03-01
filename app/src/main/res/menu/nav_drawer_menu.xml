@@ -9,6 +9,10 @@
             android:id="@+id/nav_home"
             android:title="Home" />
         <item
+            android:id="@+id/nav_newsfeed"
+            android:title="News Feed">
+        </item>
+        <item
             android:id="@+id/nav_about"
             android:title="About Us" />
         <item
@@ -22,9 +26,10 @@
             android:title="App Developers" />
         <item
             android:id="@+id/nav_technical"
-            android:title="Srijan's Technical Team">
-
+            android:title="Technical Team">
         </item>
+
+
     </group>
 
 

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lenovo.srijan">
-
+    package="iit.perul.lenovo.srijan">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logoicons"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logoicons"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TechnicalTeam"></activity>
-        <activity android:name=".ContactUs" />
-        <activity android:name=".AboutUsClass" />
-        <activity android:name=".Developers" />
+        <activity android:name="iit.perul.lenovo.srijan.TechnicalTeam"></activity>
+        <activity android:name="iit.perul.lenovo.srijan.ContactUs" />
+        <activity android:name="iit.perul.lenovo.srijan.AboutUsClass" />
+        <activity android:name="iit.perul.lenovo.srijan.Developers" />
         <activity
-            android:name=".splashactivity"
+            android:name="iit.perul.lenovo.srijan.splashactivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -24,88 +25,89 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".NewsFeed" />
-        <activity android:name=".MnMSrijan" />
-        <activity android:name=".competition" />
-        <activity android:name=".dance" />
-        <activity android:name=".salsa" />
-        <activity android:name=".informals" />
-        <activity android:name=".Musical" />
-        <activity android:name=".Dramatics" />
-        <activity android:name=".Photography" />
-        <activity android:name=".FineArts" />
-        <activity android:name=".Films" />
-        <activity android:name=".Kavyanjali" />
-        <activity android:name=".Quiz" />
-        <activity android:name=".Literary" />
-        <activity android:name=".Footloose" />
-        <activity android:name=".Reflection" />
-        <activity android:name=".Streetbeats" />
-        <activity android:name=".HustleHerd" />
-        <activity android:name=".Aaroh" />
-        <activity android:name=".Unplugged" />
-        <activity android:name=".PairOnStage" />
-        <activity android:name=".Rangmanch" />
-        <activity android:name=".Monoact" />
-        <activity android:name=".Snappers" />
-        <activity android:name=".CreativeCanvas" />
-        <activity android:name=".Hallabol" />
-        <activity android:name=".ChaiPeCharcha" />
-        <activity android:name=".SketchTheView" />
-        <activity android:name=".FacePainting" />
-        <activity android:name=".TshirtPainting" />
-        <activity android:name=".DoodleMaking" />
-        <activity android:name=".KavyanjaliEvent" />
-        <activity android:name=".PopQuiz" />
-        <activity android:name=".SportsQuiz" />
-        <activity android:name=".BusinessQuiz" />
-        <activity android:name=".GeneralQuiz" />
-        <activity android:name=".Standup" />
-        <activity android:name=".Trichonia" />
-        <activity android:name=".HeadOn" />
-        <activity android:name=".Filmmaking" />
-        <activity android:name=".Workshop" />
-        <activity android:name=".Paridhan" />
-        <activity android:name=".Avalanche" />
-        <activity android:name=".CampusPrincess" />
-        <activity android:name=".NowYouSeeMe" />
-        <activity android:name=".MagicMirrors" />
-        <activity android:name=".Prom" />
-        <activity android:name=".SilentDJ" />
-        <activity android:name=".Karaoke" />
-        <activity android:name=".DJBattle" />
-        <activity android:name=".Zorbing" />
-        <activity android:name=".PhotoBooth" />
-        <activity android:name=".MovieScreening" />
-        <activity android:name=".Chess" />
-        <activity android:name=".CSGO" />
-        <activity android:name=".PUBG" />
-        <activity android:name=".FIFA19" />
-        <activity android:name=".Snooker" />
-        <activity android:name=".Paintball" />
-        <activity android:name=".KaviSammelan" />
-        <activity android:name=".OperationCampaign" />
-        <activity android:name=".PoetrySlam" />
-        <activity android:name=".Fanfic" />
-        <activity android:name=".Harmony" />
-        <activity android:name=".starattraction" />
+        <activity android:name="iit.perul.lenovo.srijan.informalslatest"></activity>
+        <activity android:name="iit.perul.lenovo.srijan.MainActivity" />
+        <activity android:name="iit.perul.lenovo.srijan.NewsFeed" />
+        <activity android:name="iit.perul.lenovo.srijan.MnMSrijan" />
+        <activity android:name="iit.perul.lenovo.srijan.competition" />
+        <activity android:name="iit.perul.lenovo.srijan.dance" />
+        <activity android:name="iit.perul.lenovo.srijan.salsa" />
+        <activity android:name="iit.perul.lenovo.srijan.informals" />
+        <activity android:name="iit.perul.lenovo.srijan.Musical" />
+        <activity android:name="iit.perul.lenovo.srijan.Dramatics" />
+        <activity android:name="iit.perul.lenovo.srijan.Photography" />
+        <activity android:name="iit.perul.lenovo.srijan.FineArts" />
+        <activity android:name="iit.perul.lenovo.srijan.Films" />
+        <activity android:name="iit.perul.lenovo.srijan.Kavyanjali" />
+        <activity android:name="iit.perul.lenovo.srijan.Quiz" />
+        <activity android:name="iit.perul.lenovo.srijan.Literary" />
+        <activity android:name="iit.perul.lenovo.srijan.Footloose" />
+        <activity android:name="iit.perul.lenovo.srijan.Reflection" />
+        <activity android:name="iit.perul.lenovo.srijan.Streetbeats" />
+        <activity android:name="iit.perul.lenovo.srijan.HustleHerd" />
+        <activity android:name="iit.perul.lenovo.srijan.Aaroh" />
+        <activity android:name="iit.perul.lenovo.srijan.Unplugged" />
+        <activity android:name="iit.perul.lenovo.srijan.PairOnStage" />
+        <activity android:name="iit.perul.lenovo.srijan.Rangmanch" />
+        <activity android:name="iit.perul.lenovo.srijan.Monoact" />
+        <activity android:name="iit.perul.lenovo.srijan.Snappers" />
+        <activity android:name="iit.perul.lenovo.srijan.CreativeCanvas" />
+        <activity android:name="iit.perul.lenovo.srijan.Hallabol" />
+        <activity android:name="iit.perul.lenovo.srijan.ChaiPeCharcha" />
+        <activity android:name="iit.perul.lenovo.srijan.SketchTheView" />
+        <activity android:name="iit.perul.lenovo.srijan.FacePainting" />
+        <activity android:name="iit.perul.lenovo.srijan.TshirtPainting" />
+        <activity android:name="iit.perul.lenovo.srijan.DoodleMaking" />
+        <activity android:name="iit.perul.lenovo.srijan.KavyanjaliEvent" />
+        <activity android:name="iit.perul.lenovo.srijan.PopQuiz" />
+        <activity android:name="iit.perul.lenovo.srijan.SportsQuiz" />
+        <activity android:name="iit.perul.lenovo.srijan.BusinessQuiz" />
+        <activity android:name="iit.perul.lenovo.srijan.GeneralQuiz" />
+        <activity android:name="iit.perul.lenovo.srijan.Standup" />
+        <activity android:name="iit.perul.lenovo.srijan.Trichonia" />
+        <activity android:name="iit.perul.lenovo.srijan.HeadOn" />
+        <activity android:name="iit.perul.lenovo.srijan.Filmmaking" />
+        <activity android:name="iit.perul.lenovo.srijan.Workshop" />
+        <activity android:name="iit.perul.lenovo.srijan.Paridhan" />
+        <activity android:name="iit.perul.lenovo.srijan.Avalanche" />
+        <activity android:name="iit.perul.lenovo.srijan.CampusPrincess" />
+        <activity android:name="iit.perul.lenovo.srijan.NowYouSeeMe" />
+        <activity android:name="iit.perul.lenovo.srijan.MagicMirrors" />
+        <activity android:name="iit.perul.lenovo.srijan.Prom" />
+        <activity android:name="iit.perul.lenovo.srijan.SilentDJ" />
+        <activity android:name="iit.perul.lenovo.srijan.Karaoke" />
+        <activity android:name="iit.perul.lenovo.srijan.DJBattle" />
+        <activity android:name="iit.perul.lenovo.srijan.Zorbing" />
+        <activity android:name="iit.perul.lenovo.srijan.PhotoBooth" />
+        <activity android:name="iit.perul.lenovo.srijan.MovieScreening" />
+        <activity android:name="iit.perul.lenovo.srijan.Chess" />
+        <activity android:name="iit.perul.lenovo.srijan.CSGO" />
+        <activity android:name="iit.perul.lenovo.srijan.PUBG" />
+        <activity android:name="iit.perul.lenovo.srijan.FIFA19" />
+        <activity android:name="iit.perul.lenovo.srijan.Snooker" />
+        <activity android:name="iit.perul.lenovo.srijan.Paintball" />
+        <activity android:name="iit.perul.lenovo.srijan.KaviSammelan" />
+        <activity android:name="iit.perul.lenovo.srijan.OperationCampaign" />
+        <activity android:name="iit.perul.lenovo.srijan.PoetrySlam" />
+        <activity android:name="iit.perul.lenovo.srijan.Fanfic" />
+        <activity android:name="iit.perul.lenovo.srijan.Harmony" />
+        <activity android:name="iit.perul.lenovo.srijan.starattraction" />
 
-        <service android:name=".MyFirebaseInstanceIDService">
+        <service android:name="iit.perul.lenovo.srijan.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name="iit.perul.lenovo.srijan.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <activity android:name=".Games" />
-        <activity android:name=".Highlights" />
-        <activity android:name=".Details" />
-        <activity android:name=".stardetails" />
+        <activity android:name="iit.perul.lenovo.srijan.Games" />
+        <activity android:name="iit.perul.lenovo.srijan.Highlights" />
+        <activity android:name="iit.perul.lenovo.srijan.Details" />
+        <activity android:name="iit.perul.lenovo.srijan.stardetails" />
     </application>
 
 </manifest>

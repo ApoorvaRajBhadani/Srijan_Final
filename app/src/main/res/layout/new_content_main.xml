@@ -6,7 +6,7 @@
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="@layout/activity_main"
-    tools:context=".MainActivity"
+    tools:context="iit.perul.lenovo.srijan.MainActivity"
     android:background="@drawable/mainbg"
     android:id="@+id/main"
     >
@@ -21,15 +21,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:background="@mipmap/nav" />
-        <ImageView
-            android:layout_width="40dp"
-            android:id="@+id/bell1"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="16dp"
-            android:layout_height="35dp"
-            android:src="@drawable/bell1"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"/>
+
         <ImageView
             android:layout_width="wrap_content"
             android:id="@+id/imageView"
