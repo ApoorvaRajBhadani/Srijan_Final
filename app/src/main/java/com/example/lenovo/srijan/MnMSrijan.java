@@ -54,8 +54,7 @@ public class MnMSrijan extends MainActivity {
     ConnectivityManager connectivityManager;//new line
 
     //todo: photos url from firebase
-    String[] photos = {"https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/photos%2Fimg1.jpg?alt=media&token=1082e395-1e4c-4579-a1b8-0bdbb21b9b3b","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/photos%2Fimhg2.jpg?alt=media&token=5ee1f8b1-8bef-4049-aebe-86dbe76fd334"};
-
+    String[] photos = {"https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FMr.Ms%2Fmr.mrs1.jpg?alt=media&token=9c281e66-4ebd-48d6-84ec-daeec8bf9b1c","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FMr.Ms%2Fmr.mrs2.jpg?alt=media&token=91b2f2ed-3042-4584-a95d-3724b1803574","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FMr.Ms%2Fmr.mrs3.jpg?alt=media&token=c79691d7-6902-4062-a0c2-a7fe3ce7205e"};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +63,7 @@ public class MnMSrijan extends MainActivity {
         imagesList = new ArrayList<>();
         imagesList.add(photos[0]);
         imagesList.add(photos[1]);
+        imagesList.add(photos[2]);
         init();
         nav();
         final TextView headingTextView = (TextView)findViewById(R.id.slide3_heading_textView);

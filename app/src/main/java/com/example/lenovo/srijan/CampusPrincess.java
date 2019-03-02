@@ -54,8 +54,7 @@ public class CampusPrincess extends MainActivity {
     ConnectivityManager connectivityManager;//new line
 
     //todo: photos url from firebase
-    String[] photos = {"https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/photos%2Fimg1.jpg?alt=media&token=1082e395-1e4c-4579-a1b8-0bdbb21b9b3b","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/photos%2Fimhg2.jpg?alt=media&token=5ee1f8b1-8bef-4049-aebe-86dbe76fd334"};
-
+    String[] photos = {"https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FCampusPrincess%2FPrincess1.jpg?alt=media&token=7aa41bfa-0101-4d63-894e-a4d3413d4da8","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FCampusPrincess%2Fprincess2.jpg?alt=media&token=4f45ccea-729b-46fd-a7fa-c4a13017c917","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FCampusPrincess%2Fprincess3.jpg?alt=media&token=7c6eb0c5-507e-4838-9f11-012ba4600462"};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +63,7 @@ public class CampusPrincess extends MainActivity {
         imagesList = new ArrayList<>();
         imagesList.add(photos[0]);
         imagesList.add(photos[1]);
+        imagesList.add(photos[2]);
         init();
         nav();
         final TextView headingTextView = (TextView)findViewById(R.id.slide3_heading_textView);

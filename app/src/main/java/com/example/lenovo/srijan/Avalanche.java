@@ -54,8 +54,7 @@ public class Avalanche extends MainActivity {
     ConnectivityManager connectivityManager;//new line
 
     //todo: photos url from firebase
-    String[] photos = {"https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/photos%2Fimg1.jpg?alt=media&token=1082e395-1e4c-4579-a1b8-0bdbb21b9b3b","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/photos%2Fimhg2.jpg?alt=media&token=5ee1f8b1-8bef-4049-aebe-86dbe76fd334"};
-
+    String[] photos = {"https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FAvalanche%2Favalanche1.jpg?alt=media&token=f6f46dba-e622-4e5b-81f4-c2e334f6a3c1","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FAvalanche%2Favalanche2.jpg?alt=media&token=00c6643a-8c0b-4214-8d38-acbab0fe6771","https://firebasestorage.googleapis.com/v0/b/srijan-6df05.appspot.com/o/Informals%2FAvalanche%2Favalanche3.jpg?alt=media&token=7c62d441-1659-4530-858e-e2cb17bef35a"};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +63,7 @@ public class Avalanche extends MainActivity {
         imagesList = new ArrayList<>();
         imagesList.add(photos[0]);
         imagesList.add(photos[1]);
+        imagesList.add(photos[2]);
         init();
         nav();
         final TextView headingTextView = (TextView)findViewById(R.id.slide3_heading_textView);
